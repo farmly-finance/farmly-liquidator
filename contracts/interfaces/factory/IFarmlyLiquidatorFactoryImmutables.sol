@@ -1,7 +1,7 @@
 pragma solidity >=0.5.0;
 import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
 import "../chainlink/IAutomationRegistry.sol";
-import "../chainlink/IAutomationRegistar.sol";
+import "../chainlink/IAutomationRegistrar.sol";
 
 /// @title The immutable states of FarmlyLiquidatorFactory contract
 interface IFarmlyLiquidatorFactoryImmutables {
