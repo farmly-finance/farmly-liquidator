@@ -1,5 +1,6 @@
 pragma solidity >=0.5.0;
 import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
+import "@farmlyfinance/farmly-contracts/contracts/interfaces/IFarmlyPositionManager.sol";
 import "../chainlink/IAutomationRegistry.sol";
 import "../chainlink/IAutomationRegistrar.sol";
 
@@ -16,6 +17,13 @@ interface IFarmlyLiquidatorFactoryImmutables {
     /// @notice The automation registrar contract
     /// @return Returns the automation registrar contract
     function automationRegistrar() external view returns (IAutomationRegistar);
+
+    /// @notice Farmly Finance position manager contract
+    /// @return Returns Farmly Finance position manager contract
+    function farmlyPositionManager()
+        external
+        view
+        returns (IFarmlyPositionManager);
 
     /// @notice Maximum number of positions for the liquidator
     /// @dev Due to the gas limit, the maximum number of liquidations
