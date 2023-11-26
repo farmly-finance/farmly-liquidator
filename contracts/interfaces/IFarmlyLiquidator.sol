@@ -10,5 +10,22 @@ interface IFarmlyLiquidator is
     IFarmlyLiquidatorImmutables,
     AutomationCompatibleInterface
 {
+    struct CheckRange {
+        uint256 min;
+        uint256 max;
+    }
 
+    enum Operation {
+        LiquidatePosition,
+        FundUpkeep
+    }
+
+    /// @notice The id of liquidator
+    /// @return Returns the id of liquidator
+    function liquidatorID() external view returns (uint256);
+
+    /// @notice Position control range for liquidator
+    /// @return min Minimum position id
+    /// @return max Maximum position id
+    function checkRange() external view returns (uint256 min, uint256 max);
 }
