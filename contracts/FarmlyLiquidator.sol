@@ -16,6 +16,12 @@ contract FarmlyLiquidator is IFarmlyLiquidator {
 
     constructor(uint256 _liquidatorID) {
         farmlyLiquidatorFactory = IFarmlyLiquidatorFactory(msg.sender);
+        farmlyPositionManager = IFarmlyPositionManager(
+            farmlyLiquidatorFactory.farmlyPositionManager()
+        );
+        farmlyUniV3Reader = IFarmlyUniV3Reader(
+            farmlyPositionManager.farmlyUniV3Reader()
+        );
         uint256 maxPositionPerLiquidator = farmlyLiquidatorFactory
             .MAX_POSITION_PER_LIQUIDATOR();
         liquidatorID = _liquidatorID;
@@ -93,7 +99,7 @@ contract FarmlyLiquidator is IFarmlyLiquidator {
             farmlyPositionManager.liquidatePosition(
                 IFarmlyPositionManagerActions.LiquidatePositionParams(
                     IFarmlyUniV3Executor(
-                        0x6C31c4AD95bbF35BfbE4F3DEcd9f60AF833F455c
+                        0x5Cb17cd6D943f8440B07Ce2d0cb5eeaEbf6eD6f4
                     ),
                     positionID
                 )
