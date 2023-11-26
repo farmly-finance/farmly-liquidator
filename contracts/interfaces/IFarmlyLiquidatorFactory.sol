@@ -2,7 +2,7 @@ pragma solidity >=0.5.0;
 import "@chainlink/contracts/src/v0.8/automation/AutomationCompatible.sol";
 
 import "./IFarmlyLiquidator.sol";
-import "./factory/IFarmlyLiquidatorFactoryImmutables.sol";
+import "./IFarmlyLiquidatorFactoryImmutables.sol";
 
 /// @title The interface of the liquidator factory contract
 /// @notice FarmlyLiquidatorFactory is responsible for creating and managing FarmlyLiquidator contracts.
