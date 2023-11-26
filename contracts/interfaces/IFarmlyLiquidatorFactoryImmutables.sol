@@ -16,7 +16,7 @@ interface IFarmlyLiquidatorFactoryImmutables {
 
     /// @notice The automation registrar contract
     /// @return Returns the automation registrar contract
-    function automationRegistrar() external view returns (IAutomationRegistar);
+    function automationRegistrar() external view returns (IAutomationRegistrar);
 
     /// @notice Farmly Finance position manager contract
     /// @return Returns Farmly Finance position manager contract

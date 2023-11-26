@@ -1,6 +1,6 @@
 pragma solidity >=0.5.0;
 
-interface IAutomationRegistar {
+interface IAutomationRegistrar {
     struct RegistrationParams {
         string name;
         bytes encryptedEmail;
