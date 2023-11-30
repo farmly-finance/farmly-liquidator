@@ -99,7 +99,7 @@ contract FarmlyLiquidator is IFarmlyLiquidator {
             farmlyPositionManager.liquidatePosition(
                 IFarmlyPositionManagerActions.LiquidatePositionParams(
                     IFarmlyUniV3Executor(
-                        0x5Cb17cd6D943f8440B07Ce2d0cb5eeaEbf6eD6f4
+                        0x12AC5a5305AD7f733aF532e38235Cb6f1C66f5D5
                     ),
                     positionID
                 )

@@ -21,7 +21,7 @@
   "homepage": "https://github.com/farmly-finance/farmly-liquidator#readme",
   "dependencies": {
     "@chainlink/contracts": "^0.7.1",
-    "@farmlyfinance/farmly-contracts": "^1.0.1",
+    "@farmlyfinance/farmly-contracts": "^1.0.2",
     "@openzeppelin/contracts": "^4.8.0",
     "@uniswap/v3-core": "github:Uniswap/v3-core#0.8",
     "@uniswap/v3-periphery": "github:Uniswap/v3-periphery#0.8",
